@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "5eea86050d69ec4254ffc1ab",
+        "name": "Iron Man",
+        "email_address": "iron.man@mail.com",
+        "password": "$2a$10$bfcf7wvDSmRQKRhiQl5JSeEgws4dV7u6pE.Wz9PisHPwc4cRXk6Eu"
+    },
+    {
+        "_id": "5eea86050d69ec4254ffc1ad",
+        "name": "Thor",
+        "email_address": "thor@mail.com",
+        "password": "$2a$10$ECgzQ4O1RrX9EVK1tiWji.CWf3jLvgFRCtrFMYj/s0VSXuETtcNBm"
+    },
+    {
+        "_id": "5eea86050d69ec4254ffc1ae",
+        "name": "Loki",
+        "email_address": "loki@mail.com",
+        "password": "$2a$10$NZFPlM8KivEk6ws/9Vo/GeBQBPpLJ7NSgC0immvAMCo6A1vmvpDce"
+    }
+]

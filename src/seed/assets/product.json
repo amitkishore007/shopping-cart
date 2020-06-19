@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "5eeb5931895ba91d1cd20a52",
+        "name": "Round neck T-Shirt",
+        "category": "5eeb5931895ba91d1cd20a4e",
+        "description": "This is a clothing product",
+        "price": "12.2",
+        "make": 2019
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a53",
+        "name": "v neck T-Shirt",
+        "category": "5eeb5931895ba91d1cd20a4e",
+        "description": "This is a clothing product",
+        "price": "9.2",
+        "make": 2018
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a54",
+        "name": "Nescafe",
+        "category": "5eeb5931895ba91d1cd20a50",
+        "description": "This is a food product",
+        "price": "17.2",
+        "make": 2011
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a55",
+        "name": "Green Tea",
+        "category": "5eeb5931895ba91d1cd20a51",
+        "description": "This is a demo product",
+        "price": "12.2",
+        "make": 2019
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a56",
+        "name": "Lemon Tea",
+        "category": "5eeb5931895ba91d1cd20a51",
+        "description": "This is a food product",
+        "price": "2.2",
+        "make": 2015
+    }
+]

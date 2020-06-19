@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "5eeb5931895ba91d1cd20a4e",
+        "name": "T-Shirt",
+        "type": "clothing"
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a4f",
+        "name": "Jeans",
+        "type": "clothing"
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a50",
+        "name": "Coffee",
+        "type": "food"
+    },
+    {
+        "_id": "5eeb5931895ba91d1cd20a51",
+        "name": "Tea",
+        "type": "food"
+    }
+]
