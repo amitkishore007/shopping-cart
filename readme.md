@@ -66,12 +66,12 @@ Below are the list of features along with the API Endpoints.
 > API Documentation and useses
 ### Product
 
-```json
 Get the list of all the products
 Method: GET
 ENDPOINT: /api/v1/products
 
-Response 
+Response: 
+```json
 {
     "status": "success",
     "code": 200,
@@ -92,7 +92,6 @@ Response
 }
 ```
 
-```sh
 Get the list of all the products
 METHOD: GET
 ENDPOINT: /api/v1/products
@@ -100,7 +99,8 @@ QUERY PARAM : { category: "{category_id}" }
 
 e.g: /api/v1/products?category=5eeb5931895ba91d1cd20a4e
 
-Response 
+Response: 
+```json
 {
     "status": "success",
     "code": 200,
@@ -135,12 +135,12 @@ Response
 
 ### Category
 
-```sh
 Get the list of all the categories
 Method: GET
 ENDPOINT: /api/v1/categories
 
-Response 
+Response:
+```json
 {
     "status": "success",
     "code": 200,
@@ -174,11 +174,11 @@ Response
 To login into the system we need to use Basic Auth 
 e.g. send user credentials in the header as followed
 
-```sh
+```json
 Authorization Basic bG9raUBtYWlsLmNvbTpkZW1vQDEyMw==
 ```
 
-```sh
+```json
 Above "bG9raUBtYWlsLmNvbTpkZW1vQDEyMw==" is base64 encoded string of user's credentials generated using this format user_email:password
 ```
 
@@ -193,12 +193,13 @@ on running the seed command few users will seeded into the system as followed
 Open Postman and in the Authorization tab choose Basic Auth and use above mentioned email & pass
 
 Request to login:
-```sh
+
 URL: /api/v1/session
 METHOD: POST
 HEADERS: { Authorization Basic `token` }
 
-Response
+Response:
+```json
 {
     "status": "success",
     "code": 200,
@@ -219,14 +220,14 @@ Response
 
 
 Adding Product to cart:
-```sh
 ENDPOINT: /api/v1/cart
 METHOD: POST
 BODY: { product:`product_id`, quantity: `number`(optional) }
 
 HEADER: { 'X-SESSION-ID': `token` }
 
-response
+Response:
+```json
 {
     "status": "success",
     "code": 200,
@@ -235,13 +236,13 @@ response
 ```
 
 Get User cart:
-```sh
 ENDPOINT: /api/v1/cart
 METHOD: GET
 
 HEADER: { 'X-SESSION-ID': `token` }
 
 Response:
+```json
 {
     "status": "success",
     "code": 200,
@@ -266,7 +267,7 @@ Response:
 ## Test Cases - Mocha library
 
 Running the test cases:
-```sh
+```json
 $ npm run test
 
 
@@ -296,9 +297,8 @@ Output:
 
 ## Error Responses
 
-```sh
-Invalid Url
-
+Invalid Url:
+```json
 {
     "status": "failed",
     "code": 400,
@@ -312,8 +312,8 @@ Invalid Url
 ```
 
 
-```sh
-Invalid Request Data
+Invalid Request Data:
+```json
 {
     "status": "failed",
     "code": 400,
@@ -328,9 +328,8 @@ Invalid Request Data
 ```
 
 
-```sh
-Try to access unauthorized resource
-
+Try to access unauthorized resource:
+```json
 {
     "status": "failed",
     "code": 401,
@@ -344,10 +343,8 @@ Try to access unauthorized resource
 
 ```
 
-
-```sh
-Invalid Credentials while login
-
+Invalid Credentials while login:
+```json
 {
     "status": "failed",
     "code": 454,
