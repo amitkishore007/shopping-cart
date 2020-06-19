@@ -66,7 +66,7 @@ Below are the list of features along with the API Endpoints.
 > API Documentation and useses
 ### Product
 
-```sh
+```json
 Get the list of all the products
 Method: GET
 ENDPOINT: /api/v1/products
