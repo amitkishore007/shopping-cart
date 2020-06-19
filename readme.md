@@ -66,12 +66,12 @@ Below are the list of features along with the API Endpoints.
 > API Documentation and useses
 ### Product
 
-Get the list of all the products
+Get the list of all the products:
+```json
 Method: GET
 ENDPOINT: /api/v1/products
 
 Response: 
-```json
 {
     "status": "success",
     "code": 200,
@@ -92,7 +92,8 @@ Response:
 }
 ```
 
-Get the list of all the products
+Get the list of all the products:
+```json
 METHOD: GET
 ENDPOINT: /api/v1/products
 QUERY PARAM : { category: "{category_id}" }
@@ -100,7 +101,6 @@ QUERY PARAM : { category: "{category_id}" }
 e.g: /api/v1/products?category=5eeb5931895ba91d1cd20a4e
 
 Response: 
-```json
 {
     "status": "success",
     "code": 200,
@@ -135,12 +135,12 @@ Response:
 
 ### Category
 
-Get the list of all the categories
+Get the list of all the categories:
+```json
 Method: GET
 ENDPOINT: /api/v1/categories
 
 Response:
-```json
 {
     "status": "success",
     "code": 200,
@@ -193,13 +193,12 @@ on running the seed command few users will seeded into the system as followed
 Open Postman and in the Authorization tab choose Basic Auth and use above mentioned email & pass
 
 Request to login:
-
+```json
 URL: /api/v1/session
 METHOD: POST
 HEADERS: { Authorization Basic `token` }
 
 Response:
-```json
 {
     "status": "success",
     "code": 200,
@@ -220,6 +219,7 @@ Response:
 
 
 Adding Product to cart:
+```json
 ENDPOINT: /api/v1/cart
 METHOD: POST
 BODY: { product:`product_id`, quantity: `number`(optional) }
@@ -227,7 +227,6 @@ BODY: { product:`product_id`, quantity: `number`(optional) }
 HEADER: { 'X-SESSION-ID': `token` }
 
 Response:
-```json
 {
     "status": "success",
     "code": 200,
@@ -236,13 +235,13 @@ Response:
 ```
 
 Get User cart:
+```json
 ENDPOINT: /api/v1/cart
 METHOD: GET
 
 HEADER: { 'X-SESSION-ID': `token` }
 
 Response:
-```json
 {
     "status": "success",
     "code": 200,
